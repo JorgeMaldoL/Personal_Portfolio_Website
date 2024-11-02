@@ -191,9 +191,14 @@ h2{
     cursor: pointer;
 }
 
+.contact_form button:hover{
+    opacity: 0.5;
+    transition: all 0.2s;
+}
+
 .contact_form button img {
-    width: 16px; /* Adjust as needed */
-    height: 16px; /* Keep this to ensure it's centered vertically */
+    width: 16px;
+    height: 16px; 
     vertical-align: middle;
 }
 
