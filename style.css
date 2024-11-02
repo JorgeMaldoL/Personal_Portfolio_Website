@@ -22,7 +22,10 @@ ul{
     list-style: none;
 }
 
-
+h2{
+    font-size: 48px;
+    font-weight: 700;
+}
 
 .header{
     background-color: #FFFFFF;
@@ -105,9 +108,7 @@ ul{
     margin-top: -300px;
 }
 
-h2{
-    font-size: 48px;
-    font-weight: 700;
+.home_text h2{
     color:#EC221F;
 }
 
@@ -136,6 +137,10 @@ h2{
 
 .about_img img{
     height:25vh;
+}
+
+.about_text h2{
+    color:#EC221F;
 }
 
 #red_text{

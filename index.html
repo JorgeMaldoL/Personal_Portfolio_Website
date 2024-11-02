@@ -48,15 +48,15 @@
                 <a href="#contact">Contact Me</a>
             </div>
             <div class="home_img">
-                <img src="Happy.png" alt="image of woman that looks happy">
+                <img src="assets/Happy.png" alt="image of woman that looks happy">
             </div>
         </section>
         <section class="section" id="about">
             <div class="about_img">
-                <img src="Focused.png" alt="Woman staring at the camera while code is projected on her face. Looking Focused.">
+                <img src="assets/Focused.png" alt="Woman staring at the camera while code is projected on her face. Looking Focused.">
             </div>
             <div class="about_text">
-                <h2>About Me</h2>
+                <h2>Who am I</h2>
                 <h4>Hello my name is <span id="red_text">John Doe</span>. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
                 <p>Programming languages that I am proficient in:</p>
                 <ul>
@@ -67,10 +67,40 @@
             </div>
         </section>
         <section class="section" id="projects">
-
+            <div class="project_text">
+                <h4>Feature Project</h4>
+                <h3>Project Title</h3>
+                <p>Give a discreption on what the project is about and what you wanted to achieve while making the project. The picture to the right should be a screenshot of the project.</p>
+                <p>type what technology you used:</p>
+                <ul>
+                    <li>PHP</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+                <a href="#project1">
+                    <img src="assets/External link.png" alt="External link">
+                </a>
+                <a href="#githubRepository"> 
+                    <img src="assets/Github.png" alt="Link to github repostory">
+                </a>   
+            </div>
+            <div class="project_picture">
+                <img src="CodeImage.png" alt="Picture of code that represents a screenshot of your project.">
+            </div>
         </section>
         <section class="section" id="contact">
-
+            <div class="contact_form">
+                <h2>Contact Me</h2>
+                <p><span id="red_text">Email me</span></p>
+                <form action="/action_page.php" method="get" name="myForm">
+                    <input type="text" name="name" placeholder="Full Name:" class="contact_inputs" required><br>
+                    <input type="text" name="Email" placeholder="Example@email.com" class="contact_inputs" required><br>
+                    <textarea name="message" placeholder="To write..." class="contact_inputs" required></textarea>
+                    <button type="submit">Send <img src="assets/Arrow right.png" alt=""></button>
+                </form>
+            </div>
+            <div class="business_card"></div>
         </section>
     </main>
 </body>
