@@ -92,11 +92,16 @@
             <div class="contact_form">
                 <h2>Contact Me</h2>
                 <p><span id="red_text">Email me</span></p>
-                <form action="/action_page.php" method="get" name="myForm">
+                <form action="https://api.web3forms.com/submit" method="POST" name="myForm">
+                    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                    <!--GO TO WEB3FORMS.COM AND SUBMITTING YOUR GMAIL
+                     GET AN ACCESS KEY CONNECTED TO THAT EMAIL
+                    THEN PLUG THAT ACCESS KEY TO THE VALUE = "YOUR_ACCESS_KEY_HERE"-->
+
                     <input type="text" name="name" placeholder="Full Name:" class="contact_inputs" required><br>
                     <input type="text" name="Email" placeholder="Example@email.com" class="contact_inputs" required><br>
-                    <textarea name="message" placeholder="To write..." class="contact_inputs" required></textarea><br>
-                    <button type="submit">Send <img src="assets/Arrow right.png" alt=""></button>
+                    <textarea name="message" placeholder="To write..." class="contact_inputs" id="textarea" required></textarea><br>
+                    <button type="submit">Send <img src="assets/Arrow right.png" alt="send the form"></button>
                 </form>
             </div>
             <div class="business_card">
@@ -105,10 +110,10 @@
                 <p>Resident: New York City, NY</p>
                 <p>Email: JohnDoe@email.com</p>
                 <div class="social_links">
-                    <a><img src="assets/Github.png" alt="link to github"> Github</a>
-                    <a><img src="assets/Linkedin.png" alt="link to github"> Linkedin</a>
+                    <a href="#Github"><img src="assets/Github.png" alt="link to github"> Github</a>
+                    <a href="#Linkedin"><img src="assets/Linkedin.png" alt="link to github"> Linkedin</a>
                 </div>
-                <a><img src="assets/download.png" alt="link to download my CV"></a>
+                <a href="#Resume">Resume<img src="assets/download.png" alt="link to download my CV"></a>
             </div>
         </section>
     </main>

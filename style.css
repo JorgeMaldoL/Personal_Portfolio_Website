@@ -148,6 +148,61 @@ h2{
     color:#EC221F;
 }
 
+.contact_form form {
+    display: flex;
+    flex-direction: column;
+    gap: 0; 
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contact_inputs {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid lightgrey;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500px;
+    color: #666;
+    border-radius: 10px;
+    transition: all 0.2s;
+}
+
+.contact_inputs:focus{
+    border: 2px solid gray;
+} 
+
+.contact_inputs::placeholder{
+    color: #EC221F;
+}
+
+.contact_form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    width: 40%;
+    font-size: 14px;
+    color: #fff;
+    background-color: #EC221F;
+    gap: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.contact_form button img {
+    width: 16px; /* Adjust as needed */
+    height: 16px; /* Keep this to ensure it's centered vertically */
+    vertical-align: middle;
+}
+
+
+#textarea{
+    height: 140px;
+    border-radius: 5px;
+}
+
 #red_text{
     color: #EC221F;
 }
