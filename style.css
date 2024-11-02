@@ -78,7 +78,6 @@ ul{
 
 .section:nth-child(1){
     background:rgb(182,190,198);
-    display: flex;
 }
 
 .section:nth-child(2){
@@ -101,10 +100,44 @@ ul{
 }
 
 .home_text h1{
-    font-size: 50px;
+    font-size: 48px;
+    font-weight: bolder;
     margin-top: -300px;
 }
 
+h2{
+    font-size: 48px;
+    font-weight: 700;
+    color:#EC221F;
+}
+
+.home_text h4{
+    margin: 30px 0 60px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.home_text a{
+    background-color: #EC221F;
+    padding: 15px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    transition: all 0.2s;
+}
+
+.home_text a:hover{
+    opacity: 0.5;
+    transition: all 0.2s;
+}
+
 .home_img img{
-height: 60vh;
+    height: 60vh;
+}
+
+.about_img img{
+    height:25vh;
+}
+
+#red_text{
+    color: #EC221F;
 }
