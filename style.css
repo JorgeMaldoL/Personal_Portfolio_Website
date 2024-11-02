@@ -50,6 +50,7 @@ h2{
 .nav_list{
     display: flex;
     column-gap: 40px;
+    font-weight: 500;
 }
 
 .nav_link{
@@ -61,6 +62,10 @@ h2{
     opacity: 0.5;
     font-size: large;
     transition: all 0.2s;
+}
+
+.resume img{
+    vertical-align: middle;
 }
 
 .active{
