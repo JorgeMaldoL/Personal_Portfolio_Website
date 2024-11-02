@@ -1,0 +1,9 @@
+# Ignore user-specific files
+.bash_history
+.bash_logout
+.gitconfig
+
+# Ignore cache directories
+.cache/
+*.tmp
+*.log
