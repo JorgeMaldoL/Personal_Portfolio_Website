@@ -1,8 +1,11 @@
+// Select all navigation links and sections
 const navLinkEls = document.querySelectorAll('.nav_link');
 const sectionEls = document.querySelectorAll('.section');
-const darkModeSwitch = document.getElementById('darkModeSwitch');
+const darkModeToggle = document.getElementById('darkModeToggle');
 
 let currentSection = 'home';
+
+// Update the active navigation link based on scroll position
 window.addEventListener('scroll', () => {
     sectionEls.forEach(sectionEl => {
         if (window.scrollY >= (sectionEl.offsetTop - sectionEl.clientHeight / 2)) {
@@ -18,8 +21,9 @@ window.addEventListener('scroll', () => {
     });
 });
 
-if (darkModeSwitch) {
-    darkModeSwitch.addEventListener('change', () => {
+// Toggle dark mode
+if (darkModeToggle) {
+    darkModeToggle.addEventListener('change', () => {
         document.body.classList.toggle('dark-mode');
     });
 }

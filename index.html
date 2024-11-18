@@ -14,31 +14,20 @@
     <header class="header">
         <div class="header_content">
             <a href="#">
-                <img src="assets/Heart.png" alt="Logo of a heart that brings you back home section" class="logo_img">
+                <img src="assets/Heart.png" alt="Logo of a heart that brings you back home section" class="logo_img heart_img">
             </a>
             <nav>
                 <ul class="nav_list">
-                    <!-- Existing nav items -->
+                    <li class="nav_item"><a href="#home" class="nav_link active">Home</a></li>
+                    <li class="nav_item"><a href="#about" class="nav_link">About</a></li>
+                    <li class="nav_item"><a href="#projects" class="nav_link">Projects</a></li>
+                    <li class="nav_item"><a href="#contact" class="nav_link">Contact</a></li>
+                    <li class="nav_item"><a href="#Resume" class="nav_link resume">Resume <img src="assets/download.png" alt="download my Resume" class="download_img"></a></li>
                     <li class="nav_item">
-                        <a href="#home" class="nav_link active">Home</a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#about" class="nav_link">About</a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#projects" class="nav_link">Projects</a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#contact" class="nav_link">Contact</a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#Resume" class="nav_link resume">Resume <img src="assets/download.png" alt="download my Resume"></a>
-                    </li>
-                    <li class="nav_item">
-                        <div class="dark-mode-toggle">
-                            <input type="checkbox" id="darkModeSwitch">
-                            <label for="darkModeSwitch">Dark Mode</label>
-                        </div>
+                        <label class="switch">
+                            <input type="checkbox" id="darkModeToggle">
+                            <span class="slider round"></span>
+                        </label>
                     </li>
                 </ul>
             </nav>
@@ -49,8 +38,6 @@
             <div class="home_text">
                 <h1>John Doe</h1>
                 <h2>Im a software engineer</h2>
-                <h4><span id="red_text">Full stack developer</span> who builds complete web applications and handle both the Front-end and Back-end. I create <span id="red_text">visual appealing</span> and <span id="red_text">functional</span> user experiences.</h4>
-                <a href="#contact">Contact Me</a>
             </div>
             <div class="home_img">
                 <img src="assets/Happy.png" alt="image of woman that looks happy">
@@ -62,7 +49,7 @@
             </div>
             <div class="about_text">
                 <h2>Who am I</h2>
-                <h4>Hello my name is <span id="red_text">John Doe</span>. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+                <p>Hello my name is <span id="red_text">John Doe</span>. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <p>Programming languages that I am proficient in:</p>
                 <ul>
                     <li><h4>Python</h4></li>
@@ -75,8 +62,8 @@
             <div class="project_text">
                 <h4>Feature Project</h4>
                 <h3>Project Title</h3>
-                <p>Give a discreption on what the project is about and what you wanted to achieve while making the project. The picture to the right should be a screenshot of the project.</p>
-                <p>type what technology you used:</p>
+                <p>Give a description on what the project is about and what you wanted to achieve while making the project. The picture to the right should be a screenshot of the project.</p>
+                <p>Type what technology you used:</p>
                 <ul>
                     <li>PHP</li>
                     <li>HTML</li>
@@ -87,7 +74,7 @@
                     <img src="assets/External link.png" alt="External link">
                 </a>
                 <a href="#githubRepository"> 
-                    <img src="assets/Github.png" alt="Link to github repostory">
+                    <img src="assets/Github.png" alt="Link to github repository">
                 </a>   
             </div>
             <div class="project_picture">
@@ -100,10 +87,6 @@
                 <p><span id="red_text">Email me</span></p>
                 <form action="https://api.web3forms.com/submit" method="POST" name="myForm">
                     <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
-                    <!--GO TO WEB3FORMS.COM AND SUBMITTING YOUR GMAIL
-                     GET AN ACCESS KEY CONNECTED TO THAT EMAIL
-                    THEN PLUG THAT ACCESS KEY TO THE VALUE = "YOUR_ACCESS_KEY_HERE"-->
-
                     <input type="text" name="name" placeholder="Full Name:" class="contact_inputs" required><br>
                     <input type="text" name="Email" placeholder="Example@email.com" class="contact_inputs" required><br>
                     <textarea name="message" placeholder="To write..." class="contact_inputs" id="textarea" required></textarea><br>
@@ -119,56 +102,9 @@
                     <a href="#Github"><img src="assets/Github.png" alt="link to github"> Github</a>
                     <a href="#Linkedin"><img src="assets/Linkedin.png" alt="link to github"> Linkedin</a>
                 </div>
-                <a href="#Resume">Resume<img src="assets/download.png" alt="link to download my CV"></a>
+                <a href="#Resume">Resume<img src="assets/download.png" alt="link to download my CV" class="download_img"></a>
             </div>
         </section>
     </main>
-    <style>
-        body.dark-mode {
-            background-color: #121212;
-            color: #FFFFFF;
-        }
-
-        .dark-mode .header {
-            background-color: #1E1E1E;
-        }
-
-        .dark-mode .nav_link {
-            color: #FFFFFF;
-        }
-
-        .dark-mode .home_text h1,
-        .dark-mode .home_text h2,
-        .dark-mode .home_text h4,
-        .dark-mode .home_text a {
-            color: #FFFFFF;
-        }
-
-        .dark-mode .home_text a {
-            background-color: #333333;
-        }
-
-        .dark-mode .home_text a:hover {
-            background-color: #555555;
-        }
-
-        .dark-mode .contact_inputs {
-            background-color: #333333;
-            color: #FFFFFF;
-            border: 1px solid #555555;
-        }
-
-        .dark-mode .contact_inputs::placeholder {
-            color: #AAAAAA;
-        }
-
-        .dark-mode .contact_form button {
-            background-color: #333333;
-        }
-
-        .dark-mode .contact_form button:hover {
-            background-color: #555555;
-        }
-    </style>
 </body>
 </html>
