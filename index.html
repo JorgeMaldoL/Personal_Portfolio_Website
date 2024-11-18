@@ -17,7 +17,8 @@
                 <img src="assets/Heart.png" alt="Logo of a heart that brings you back home section" class="logo_img">
             </a>
             <nav>
-                <ul class="nav_list">    
+                <ul class="nav_list">
+                    <!-- Existing nav items -->
                     <li class="nav_item">
                         <a href="#home" class="nav_link active">Home</a>
                     </li>
@@ -27,12 +28,17 @@
                     <li class="nav_item">
                         <a href="#projects" class="nav_link">Projects</a>
                     </li>
-                    <li class="nav_item">    
+                    <li class="nav_item">
                         <a href="#contact" class="nav_link">Contact</a>
                     </li>
                     <li class="nav_item">
                         <a href="#Resume" class="nav_link resume">Resume <img src="assets/download.png" alt="download my Resume"></a>
-                        
+                    </li>
+                    <li class="nav_item">
+                        <div class="dark-mode-toggle">
+                            <input type="checkbox" id="darkModeSwitch">
+                            <label for="darkModeSwitch">Dark Mode</label>
+                        </div>
                     </li>
                 </ul>
             </nav>
@@ -117,5 +123,52 @@
             </div>
         </section>
     </main>
+    <style>
+        body.dark-mode {
+            background-color: #121212;
+            color: #FFFFFF;
+        }
+
+        .dark-mode .header {
+            background-color: #1E1E1E;
+        }
+
+        .dark-mode .nav_link {
+            color: #FFFFFF;
+        }
+
+        .dark-mode .home_text h1,
+        .dark-mode .home_text h2,
+        .dark-mode .home_text h4,
+        .dark-mode .home_text a {
+            color: #FFFFFF;
+        }
+
+        .dark-mode .home_text a {
+            background-color: #333333;
+        }
+
+        .dark-mode .home_text a:hover {
+            background-color: #555555;
+        }
+
+        .dark-mode .contact_inputs {
+            background-color: #333333;
+            color: #FFFFFF;
+            border: 1px solid #555555;
+        }
+
+        .dark-mode .contact_inputs::placeholder {
+            color: #AAAAAA;
+        }
+
+        .dark-mode .contact_form button {
+            background-color: #333333;
+        }
+
+        .dark-mode .contact_form button:hover {
+            background-color: #555555;
+        }
+    </style>
 </body>
 </html>

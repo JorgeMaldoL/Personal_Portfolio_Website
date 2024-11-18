@@ -84,25 +84,6 @@ h2{
     align-items: center;
 }
 
-.section:nth-child(1){
-    background:rgb(182,190,198);
-}
-
-.section:nth-child(2){
-    background:rgb(190,182,198);
-
-}
-
-.section:nth-child(3){
-    background:rgb(197,198,182);
-
-}
-
-.section:nth-child(4){
-    background:rgb(198,182,182);
-
-}
-
 .home_text{
     margin-right: 30px;
 }
