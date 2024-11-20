@@ -36,49 +36,69 @@
     <main class="main">
         <section class="section" id="home">
             <div class="home_text">
-                <h1>John Doe</h1>
+                <h1>Jorge Maldonado</h1>
                 <h2>Im a software engineer</h2>
             </div>
             <div class="home_img">
-                <img src="assets/Happy.png" alt="image of woman that looks happy">
+                <img src="assets/Picture of me with button down.jpg">
             </div>
         </section>
         <section class="section" id="about">
             <div class="about_img">
-                <img src="assets/Focused.png" alt="Woman staring at the camera while code is projected on her face. Looking Focused.">
+                <img src="assets/picture of me with double thumbs up.jpg" alt="Woman staring at the camera while code is projected on her face. Looking Focused.">
             </div>
             <div class="about_text">
                 <h2>Who am I</h2>
-                <p>Hello my name is <span id="red_text">John Doe</span>. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Hello my name is <span id="red_text">Jorge Maldonado</span>. I am a passionate computer science student actively involved in research, programming, and mentoring. Through programs like MACSS and CSTEP, I’ve gained hands-on experience in areas like modern C++ programming and building sustainable prototypes. My journey has connected me with industry professionals and peers of all backgrounds, and solving real-world problems through innovative solutions motivates me to become a better software engineer. As a peer leader and club member, I enjoy teaching and collaborating with other.</p>
                 <p>Programming languages that I am proficient in:</p>
                 <ul>
                     <li><h4>Python</h4></li>
                     <li><h4>C++</h4></li>
                     <li><h4>JavaScript</h4></li>
+                    <li><h4>React</h4></li>
                 </ul>
             </div>
         </section>
         <section class="section" id="projects">
-            <div class="project_text">
-                <h4>Feature Project</h4>
-                <h3>Project Title</h3>
-                <p>Give a description on what the project is about and what you wanted to achieve while making the project. The picture to the right should be a screenshot of the project.</p>
-                <p>Type what technology you used:</p>
-                <ul>
-                    <li>PHP</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                </ul>
-                <a href="#project1">
-                    <img src="assets/External link.png" alt="External link">
-                </a>
-                <a href="#githubRepository"> 
-                    <img src="assets/Github.png" alt="Link to github repository">
-                </a>   
-            </div>
-            <div class="project_picture">
-                <img src="assets/CodeImage.png" alt="Picture of code that represents a screenshot of your project.">
+            <div class="projects-container">
+                <div class="projects-list">
+                    <ul>
+                        <li data-project="iot-project" class="active">Autonomous Terrarium</li>
+                        <li data-project="cpp-project">BookBot</li>
+                        <!-- Add more projects -->
+                    </ul>
+                </div>
+                <div class="project-details">
+                    <div id="iot-project" class="project-detail active">
+                        <h3>Autonomous Terrarium</h3>
+                        <img src="assets/IoTTerrarium.png" alt="IoT Sustainability Project Screenshot">
+                        <p>The Autonomous Terrarium is an Arduino-powered system that automates lighting, airflow, and irrigation to sustain plant ecosystems. It offers real-time environmental monitoring and remote control through a Wi-Fi-enabled web interface.</p>
+                        <h4>Tools Used:</h4>
+                        <ul>
+                            <li>C++ and React</li>
+                            <li>Arduino uno Wi-Fi-enabled</li>
+                            <li>Arduino IDE</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/GabrielVargasRV/terrerium_gui/tree/feature/add-dht22-sensor-and-react-integration" target="_blank">Repository</a>
+                        </div>
+                    </div>
+                    <div id="cpp-project" class="project-detail">
+                        <h3>BookBot</h3>
+                        <img src="assets/BookBotPhoto.png" alt="Modern C++ Application Screenshot">
+                        <p>This Python script analyzes the text in `frankenstein.txt`, counting the total number of words and the frequency of each alphabetical character. It generates a sorted report of character frequencies in descending order and displays the results, focusing only on letters.</p>
+                        <h4>Tools Used:</h4>
+                        <ul>
+                            <li>Python</li>
+                            <li>Visual Studio Code</li>
+                            <li>Git</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/JorgeMaldoL/bookbot" target="_blank">Repository</a>
+                        </div>
+                    </div>
+                    <!-- Add more project details -->
+                </div>
             </div>
         </section>
         <section class="section" id="contact">
@@ -94,13 +114,13 @@
                 </form>
             </div>
             <div class="business_card">
-                <h2>John Doe</h2>
+                <h2>Jorge Maldonado</h2>
                 <h4>software engineer</h4>
                 <p>Resident: New York City, NY</p>
-                <p>Email: JohnDoe@email.com</p>
+                <p>Email: Maldoandoj747@gmail.com</p>
                 <div class="social_links">
-                    <a href="#Github"><img src="assets/Github.png" alt="link to github"> Github</a>
-                    <a href="#Linkedin"><img src="assets/Linkedin.png" alt="link to github"> Linkedin</a>
+                    <a href="#Github"><img src="assets/Github.png" alt="https://github.com/JorgeMaldoL"> Github</a>
+                    <a href="#Linkedin"><img src="assets/Linkedin.png" alt="https://www.linkedin.com/in/jorge-maldonado-494640245/"> Linkedin</a>
                 </div>
                 <a href="#Resume">Resume<img src="assets/download.png" alt="link to download my CV" class="download_img"></a>
             </div>
